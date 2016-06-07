@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.force.api:force-rest-api:0.0.23">
+    <CLASSES>
+      <root url="jar://$M2_REPO$/com/force/api/force-rest-api/0.0.23/force-rest-api-0.0.23.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$M2_REPO$/com/force/api/force-rest-api/0.0.23/force-rest-api-0.0.23-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$M2_REPO$/com/force/api/force-rest-api/0.0.23/force-rest-api-0.0.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

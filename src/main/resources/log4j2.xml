@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="debug" name="NMI" packages="">
+	<appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="%X{userName} %d{dd MMM HH:mm:ss:SSS} %p %c{2}.%M - %m%n"/>
+		</Console>
+		<RollingFile name="LOG" fileName="logs/utils.log" filePattern="logs/utils%i.log">
+			<PatternLayout pattern = "%X{userName} %d{dd MMM HH:mm:ss:SSS} %p %c{2}.%M - %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="5 MB"/>
+			</Policies>
+			<DefaultRolloverStrategy max="20"/>
+		</RollingFile>
+	</appenders>
+	<loggers>
+		<logger name="com.sparg.java" level="INFO" additivity="false">
+			<appender-ref ref="LOG"/>
+            <appender-ref ref="STDOUT"/>
+		</logger>
+		<root level="INFO">
+			<appender-ref ref="LOG"/>
+			<appender-ref ref="STDOUT"/>
+		</root>
+	</loggers>
+</configuration>
