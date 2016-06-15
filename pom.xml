@@ -13,7 +13,7 @@
         <commons-logging-version>1.1.1</commons-logging-version>
         <log4j2-version>2.0-beta9</log4j2-version>
         <junit-version>4.11</junit-version>
-        <jdk.version>1.6</jdk.version>
+        <jdk.version>1.8</jdk.version>
         <jar-file-name>${project.name}</jar-file-name>
         <jackson2-version>2.6.1</jackson2-version>
     </properties>
@@ -119,6 +119,12 @@
             <groupId>org.jbpm</groupId>
             <artifactId>jbpm-jpdl</artifactId>
             <version>3.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>rome</groupId>
+            <artifactId>rome</artifactId>
+            <version>1.0</version>
         </dependency>
 
 
