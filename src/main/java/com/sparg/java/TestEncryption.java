@@ -1,8 +1,8 @@
 package com.sparg.java;
 
-import java.sql.Timestamp;
-
 import com.sparg.java.encryption.utils.Encryption;
+
+import java.sql.Timestamp;
 
 
 /**
@@ -14,7 +14,7 @@ public class TestEncryption {
 
 	public static void main(String[] args) throws Exception {
 		System.out.println(Encryption.encrypt("$", Encryption.EncryptionType.DEFAULT));
-		System.out.println(Encryption.decrypt("Ts1FSr0+vhC9aRsob4WPAQ==", Encryption.EncryptionType.DEFAULT));
+		System.out.println(Encryption.decrypt("ghBMauWMb/BlJAVrxW59sQ==", Encryption.EncryptionType.DEFAULT));
 
 		System.out.println(new Timestamp(System.currentTimeMillis()));
 	}

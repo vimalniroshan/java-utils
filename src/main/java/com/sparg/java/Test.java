@@ -1,9 +1,9 @@
 package com.sparg.java;
 
+import org.jbpm.calendar.BusinessCalendar;
+
 import java.util.Calendar;
 import java.util.Date;
-
-import org.jbpm.calendar.BusinessCalendar;
 
 /**
  * @author: vimal.sengoden
@@ -26,5 +26,20 @@ public class Test {
         System.out.println(c.getTime());
         Date d = bc.findStartOfNextDay(c.getTime());//, new Duration(1000 * 60 * 60 * 8));
         System.out.println(d);
+
+        char ch1 = '|';
+        char ch2 = '¦';
+        char ch3 = '|';
+        char ch4 = 'ª';
+        char ch5 = '║';
+
+
+        System.out.println(ch1 + " Ch1:" + ((int) ch1) + " from code  &#124; :" + Character.toChars(124)[0]);
+        System.out.println(ch2 + " Ch2:" + ((int) ch2) + " from code  &#166; :" + Character.toChars(166)[0]);
+        System.out.println(ch3 + " Ch3:" + ((int) ch3));
+        System.out.println(ch4 + " Ch4:" + ((int) ch4));
+        System.out.println(ch5 + " Ch5:" + ((int) ch5));
+
+
     }
 }
